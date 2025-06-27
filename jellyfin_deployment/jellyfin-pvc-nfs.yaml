@@ -11,7 +11,7 @@ metadata:
     app: jellyfin
 spec:
   accessModes:
-    - ReadWriteMany  #needs to be Many since shared location
+    - ReadWriteMany
   resources:
     requests:
       storage: 20Gi  #Must be equal or less than PV claim
