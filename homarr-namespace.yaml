@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: my-app-namespace
+  name: homarr
   labels:
-    app: my-application
+    app: homarr
     environment: test
-    team: example
+    team: local
