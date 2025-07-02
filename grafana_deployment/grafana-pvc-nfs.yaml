@@ -10,7 +10,7 @@ metadata:
   labels:
     app: grafana
 spec:
-  storageClassName: NFS
+  storageClassName: nfs
   accessModes:
     - ReadWriteMany
   resources:

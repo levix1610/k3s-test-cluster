@@ -9,7 +9,7 @@ metadata:
   labels:
     app: heimdall
 spec:
-  storageClassName: NFS
+  storageClassName: nfs
   capacity:
     storage: 10Gi # Must match or exceed the PVC request
   accessModes:
