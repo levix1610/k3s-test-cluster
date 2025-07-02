@@ -9,12 +9,12 @@ metadata:
   labels:
     app: grafana
 spec:
+  storageClassName: nfs
   capacity:
     storage: 10Gi # Must match or exceed the PVC request
   accessModes:
     - ReadWriteMany 
   persistentVolumeReclaimPolicy: Retain # Or Recycle/Delete, choose what happens to the NFS data when the PV is released
-  storageClassName: NFS
   nfs:
     server: 10.0.100.20 # Replace with the actual IP or hostname of your NFS server / ex. 10.0.150.10
     #Path defined here HAS to exist in the directory. Will NOT create a directory for the app.

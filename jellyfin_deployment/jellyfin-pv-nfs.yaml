@@ -9,6 +9,7 @@ metadata:
   labels:
     app: jellyfin
 spec:
+  storageClassName: nfs
   capacity:
     storage: 20Gi # Must match or exceed the PVC request
   accessModes:
