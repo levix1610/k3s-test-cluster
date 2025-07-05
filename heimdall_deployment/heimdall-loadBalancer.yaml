@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: heimdall-loadBalancer
   namespace: default
-  #annotations:
-    # Optional: For MetalLB, if you want a specific IP from your pool
-    # metallb.universe.tf/address-pool: my-app-pool 
-    # metallb.universe.tf/allow-shared-ip: app-svc # If sharing IP with another service
+  # annotations:
+    # Optional: If you were to use an external LoadBalancer like MetalLB
+    # metallb.universe.tf/address-pool: my-app-pool
+    # metallb.universe.tf/allow-shared-ip: app-svc
 spec:
   selector:
     app: heimdall
@@ -16,5 +16,3 @@ spec:
       port: 80
       targetPort: 80
   type: LoadBalancer
-  # Optional: To request a specific IP from your MetalLB pool
-    loadBalancerIP: "10.0.100.30"
