@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: heimdall-loadBalancer
+  name: heimdall-loadbalancer
   namespace: default
   # annotations:
     # Optional: If you were to use an external LoadBalancer like MetalLB
